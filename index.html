@@ -524,5 +524,21 @@
   </div>
 </footer>
 
+<script>
+  // Autoplay the intro video (muted) on desktop; keep manual play on touch/mobile.
+  (function () {
+    var v = document.querySelector('video.intro-video');
+    if (!v) return;
+    var isMobile = /Mobi|Android|iPhone|iPad|iPod/i.test(navigator.userAgent) ||
+                   (window.matchMedia && window.matchMedia('(hover: none) and (pointer: coarse)').matches);
+    if (!isMobile) {
+      v.muted = true;
+      v.setAttribute('playsinline', '');
+      var p = v.play();
+      if (p && p.catch) p.catch(function () {});
+    }
+  })();
+</script>
+
 </body>
 </html>
