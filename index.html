@@ -79,6 +79,8 @@
   .hero-fig{margin:46px 0 0;}
   .hero-fig img{max-width:100%;height:auto;border-radius:12px;border:1px solid var(--line);box-shadow:0 8px 28px rgba(20,30,40,.08);}
   .hero-fig figcaption{font-size:.85rem;color:var(--muted);margin-top:12px;text-align:left;}
+  .video-cap{font-size:1.18rem;font-weight:600;color:var(--green-dark);margin:0 0 16px;}
+  video.intro-video{width:100%;max-width:940px;border-radius:14px;border:1px solid var(--line);box-shadow:0 10px 30px rgba(20,30,40,.12);background:#fff;}
   .btn{
     display:inline-flex;align-items:center;gap:8px;
     font-size:.92rem;font-weight:600;
@@ -228,6 +230,17 @@
     </div>
   </div>
 </header>
+
+<!-- INTRO VIDEO -->
+<section id="intro-video">
+  <div class="wrap" style="text-align:center;">
+    <p class="video-cap">👀 Watch this for a quick intro!</p>
+    <video class="intro-video" controls preload="metadata" playsinline poster="assets/intro_poster.jpg">
+      <source src="assets/sve_intro.mp4" type="video/mp4">
+      Your browser doesn’t support embedded video — <a href="assets/sve_intro.mp4">download it here</a>.
+    </video>
+  </div>
+</section>
 
 <!-- ABSTRACT -->
 <section id="abstract">
