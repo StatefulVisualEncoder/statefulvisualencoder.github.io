@@ -67,7 +67,9 @@
   .authors a{color:var(--ink);}
   .authors a:hover{color:var(--green-dark);}
   .affil-logos{display:flex;align-items:center;gap:34px;margin-bottom:26px;flex-wrap:wrap;}
-  .affil-logos img{width:auto;display:block;opacity:.92;}
+  .affil-logos a{display:inline-flex;}
+  .affil-logos img{width:auto;display:block;opacity:.92;transition:opacity .15s ease,transform .15s ease;}
+  .affil-logos a:hover img{opacity:1;transform:translateY(-2px);}
   .affil-logos{gap:28px;}
   .affil-logos .lg-voio{height:38px;}
   .affil-logos .lg-sky{height:42px;}
@@ -206,10 +208,10 @@
           <span class="au"><a href="https://people.eecs.berkeley.edu/~trevor/" target="_blank" rel="noopener">Trevor Darrell</a></span>
         </div>
         <div class="affil-logos">
-          <img src="assets/voio_logo.png" alt="Voio, Inc." class="lg-voio">
-          <img src="assets/bair_logo.png" alt="Berkeley AI Research" class="lg-bair">
-          <img src="assets/sky_logo.png" alt="Sky Computing Lab, UC Berkeley" class="lg-sky">
-          <img src="assets/ucsf_logo.png" alt="UCSF" class="lg-ucsf">
+          <a href="https://www.voio.com/" target="_blank" rel="noopener"><img src="assets/voio_logo.png" alt="Voio, Inc." class="lg-voio"></a>
+          <a href="https://bair.berkeley.edu/" target="_blank" rel="noopener"><img src="assets/bair_logo.png" alt="Berkeley AI Research" class="lg-bair"></a>
+          <a href="https://sky.cs.berkeley.edu/" target="_blank" rel="noopener"><img src="assets/sky_logo.png" alt="Sky Computing Lab, UC Berkeley" class="lg-sky"></a>
+          <a href="https://www.ucsf.edu/" target="_blank" rel="noopener"><img src="assets/ucsf_logo.png" alt="UCSF" class="lg-ucsf"></a>
         </div>
         <div class="links">
           <a class="btn primary" href="#" onclick="return false;">📄 Paper</a>
